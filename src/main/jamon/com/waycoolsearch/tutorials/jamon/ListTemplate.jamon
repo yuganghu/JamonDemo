@@ -1,0 +1,13 @@
+<%args>
+  java.util.List<String> list;
+</%args>
+
+<ul>
+<%java
+for (String value : list) {
+%>
+<li><% value %></li>
+<%java
+}
+%>
+</ul>
